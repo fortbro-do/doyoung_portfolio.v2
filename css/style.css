@@ -1,0 +1,19 @@
+.container {
+  width: 100%;
+  height: 100vh; /* 스크롤을 위한 충분한 높이 */
+  position: relative;
+  overflow: hidden;
+  background: rgba(10, 41, 196, 0.858)
+}
+.bg_main_cover {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  background:  url(/images/img_main_cover.png)no-repeat center / cover; 
+  transform-origin: center ;
+  transform: translate(-50% , -50%);
+  
+}
+
