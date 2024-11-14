@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 
 /* Reset */
 html, body, h1, h2, h3, h4, h5, h6, div, p, blockquote, pre, code, address, ul, ol, li, nav, section, article, header, footer, main, aside, dl, dt, dd, table, thead, tbody, tfoot, label, caption, th, td, form, fieldset, legend, hr, input, button, textarea, object, figure, figcaption {
   margin: 0;
   padding: 0;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Pretendard" ," Noto Sans KR", sans-serif;
 }
 
 body, input, select, textarea, button, img, fieldset {

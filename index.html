@@ -1,29 +1,207 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DoYoung Portflio</title>
-  <link rel="stylesheet" href="css/style.css"> 
-  <link rel="stylesheet" href="css/reset.css">
-  <script src="js/common.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DoYoung Portflio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/pageable@latest/dist/pageable.min.css"
+    />
+    <script src="js/common.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/pageable@latest/dist/pageable.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  </head>
+  <body>
+    <heade class="header">
+      <h1>logo</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#section">Home</a>
+          </li>
+          <li>
+            <a href="#section1">Home</a>
+          </li>
+        </ul>
+      </nav>
+    </heade>
+    <main class="container">
+      <section class="home_area">
+        <div class="inner">
+          <h2 class="home_title">
+            <span class="txt_box1">DOYOUNG</span>
+            <span class="txt_box2"> PORTFOLIO</span>
+          </h2>
+        </div>
+      </section>
+      <section class="resume">
+        <div class="inner">
+          <h3>RESUME</h3>
+          <div class="resume_box">
+            <div>
+              <p class="sub_title">EXPERIENCE</p>
+              <ul>
+                <li>
+                  <p class="date_info">2024.01 - 재직중</p>
+                  <p class="info_title">
+                    <span>(주)노스글로벌</span> 웹 퍼블리셔 근무
+                  </p>
+                  <ul class="info_text">
+                    <li>• PHP환경 웹사이트 퍼블리싱</li>
+                    <li>• 유지보수(카페24, 워드프레스 일부 포함)</li>
+                    <li>• 아임웹 웹사이트 제작</li>
+                  </ul>
+                </li>
+                <li>
+                  <p class="date_info">
+                    2020.07 - 2022.11 <span>(2년 5개월)</span>
+                  </p>
+                  <p class="info_title">
+                    <span>CGV 파주야당점</span> 매니저 근무
+                  </p>
+                  <ul class="info_text">
+                    <li>• 온라인 마케팅 및 이벤트 기획</li>
+                    <li>• 식품위생 및 안전시설 관리</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p class="sub_title">EDUCATION</p>
+              <ul>
+                <li>
+                  <p class="date_info">2023.04 - 2023.09</p>
+                  <p class="info_title">
+                    <span>웹디자인&웹퍼블리셔 과정 수료</span>
+                    하이미디어컴퓨터학원
+                  </p>
+                  <ul class="info_text">
+                    <li>• HTML, CSS,Javascript, jQuery</li>
+                    <li>• 웹 접근성, 크로스 브라우징(웹 호환성),반응형웹</li>
+                  </ul>
+                </li>
+                <li>
+                  <p class="date_info">2023.02 - 2023.04</p>
+                  <p class="info_title">
+                    <span>UI / UX 디자인 피그마 과정 수료</span> 패스트캠퍼스
+                  </p>
+                  <ul class="info_text">
+                    <li>• Figma를 활용한 디자인</li>
+                    <li>• 화면 구현 및 프로토타입 제작</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="project_area">
+        <div class="inner">
+          <div class="project_box box1" style="background: #111">
+            <div class="dimmed"></div>
+            <div class="box_left">
+              <a href="">
+                <img src="" alt="" />
+              </a>
+            </div>
+            <div class="box_right">box1</div>
+          </div>
+          <div class="project_box box2">
+            <div class="dimmed"></div>
+            <div class="box_left">
+              <a href="">
+                <img src="" alt="" />
+              </a>
+            </div>
+            <div class="box_right">box2</div>
+          </div>
+          <div class="project_box box3" style="background: #fff">
+            <div class="dimmed"></div>
+            <div class="box_left">
+              <a href="">
+                <img src="" alt="" />
+              </a>
+            </div>
+            <div class="box_right">box3</div>
+          </div>
+          <div class="project_box box4">
+            <div class="dimmed"></div>
+            <div class="box_left">
+              <a href="">
+                <img src="" alt="" />
+              </a>
+            </div>
+            <div class="box_right">box4</div>
+          </div>
+          <div class="project_box box5" style="background: green">
+            <div class="dimmed"></div>
+            <div class="box_left">
+              <a href="">
+                <img src="" alt="" />
+              </a>
+            </div>
+            <div class="box_right">box5</div>
+          </div>
+          <div class="project_box box6">
+            <div class="dimmed"></div>
+            <div class="box_left">
+              <a href="">
+                <img src="" alt="" />
+              </a>
+            </div>
+            <div class="box_right">box6</div>
+          </div>
+          <div class="project_box box7">
+            <div class="dimmed"></div>
+            <div class="box_left">
+              <a href="">
+                <img src="" alt="" />
+              </a>
+            </div>
+            <div class="box_right">box7</div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      // GSAP ScrollTrigger 애니메이션 설정
+      gsap.registerPlugin(ScrollTrigger);
 
-  <section class="container">
-<div class="bg_main_cover">
-</div>
+      // 텍스트 라인 애니메이션
+      const visualAni = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".home_area .home_title",
+          start: "top 20%",
+          end: "bottom top",
+          scrub: 1,
+        },
+      });
 
+      visualAni
+        .addLabel("a")
+        .to(".home_area .txt_box1", { xPercent: 40 }, "a")
+        .to(".home_area .txt_box2", { xPercent: -40 }, "a");
 
-  </section>
-  <section style="height: 400vh;   background: rgba(10, 41, 196, 0.858)">
-    <div class="section_title">
-      <h2>About Me</h2>
-      <p>안��하세요! 저는 <span class="highlight">DoYoung</span>입니다. Front-end Developer, UI/UX Designer, and freelancer입니다.</p>
-    </div>
-  </section>
-  
-</body>
+      $(".project_box").each(function (i, el) {
+        child = $(this).find(".dimmed");
+        gsap.to(child, {
+          scrollTrigger: {
+            trigger: el,
+            start: "top top",
+            end: "bottom top",
+            scrub: 1,
+          },
+          opacity: 1,
+        });
+      });
+    </script>
+  </body>
 </html>

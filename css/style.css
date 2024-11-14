@@ -1,19 +1,173 @@
-.container {
-  width: 100%;
-  height: 100vh; /* 스크롤을 위한 충분한 높이 */
+body {
   position: relative;
-  overflow: hidden;
-  background: rgba(10, 41, 196, 0.858)
-}
-.bg_main_cover {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 100%;
-  height: 100%;
-  background:  url(/images/img_main_cover.png)no-repeat center / cover; 
-  transform-origin: center ;
-  transform: translate(-50% , -50%);
-  
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1420px;
+  margin: 0 auto;
+  transform: translateX(-50%);
+}
+
+.header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.header nav ul li a {
+  color: #fefefe;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #111;
+}
+
+.container .inner {
+  width: 100%;
+  max-width: 1420px;
+  margin: 0 auto;
+}
+
+.container h3 {
+  color: #2b2bf1;
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+/* 홈 */
+.home_area {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home_title {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  color: #2b2bf1;
+  font-size: 20rem;
+  line-height: 1;
+}
+
+
+/* 이력 */
+.resume {
+  height: 100vh;
+  padding: 5rem 0;
+}
+
+.resume .inner .resume_box {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  margin-top: 5rem;
+  padding-left: 3rem;
+  color: #fefefe;
+}
+
+.resume .inner .resume_box>div {
+  display: flex;
+  gap: 5rem;
+
+}
+
+.resume .inner .resume_box>div ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding-left: 3rem;
+}
+
+
+.resume .inner .resume_box>div li ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+}
+
+.resume .sub_title {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.resume ul .date_info {
+  font-size: 2rem;
+  font-weight: 500;
+
+}
+
+.resume ul .date_info span {
+  font-size: 1.4rem;
+}
+
+
+.resume ul .info_title {
+  margin-top: 1rem;
+  color: #dedede;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.2;
+
+}
+
+.resume ul .info_title span {
+  color: #fefefe;
+  font-weight: 600;
+}
+
+.resume ul .info_text {
+  color: #dedede;
+  font-size: 1.6rem;
+}
+
+
+
+
+
+/* 프로젝트 */
+.project_area {
+  width: 100%;
+}
+
+.project_area>div {
+  position: relative;
+}
+
+.project_area .project_box {
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  height: 100vh;
+}
+
+.project_area .project_box .dimmed {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.project_area .project_box .box_left,
+.project_area .project_box .box_right {
+  height: 100%;
+}
