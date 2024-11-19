@@ -46,7 +46,7 @@ body {
 
 /* 홈 */
 .home_area {
-  height: 100vh;
+  height: 150vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,75 +63,112 @@ body {
 
 
 /* 이력 */
-.resume {
+.career_area {
   height: 100vh;
   padding: 5rem 0;
 }
 
-.resume .inner .resume_box {
+.career_area .inner {
+  display: grid;
+  grid-template-columns: .8fr 1fr;
+}
+
+.career_area .inner .goal_text {
+  color: #FFF;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.career_area .inner .goal_text span {
+  font-weight: 700;
+}
+
+.career_area .inner .career_box {
   display: flex;
   flex-direction: column;
-  gap: 5rem;
-  margin-top: 5rem;
-  padding-left: 3rem;
+  gap: 8rem;
+  margin-top: 3.12rem;
   color: #fefefe;
 }
 
-.resume .inner .resume_box>div {
-  display: flex;
+.career_area .inner .career_box>div {
+  display: grid;
+  grid-template-columns: 14.2rem 1fr;
+  align-items: flex-start;
+  gap: 9.5rem;
+}
+
+.career_area .inner .career_box>div .career_box_list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5rem;
+}
+
+
+
+.career_area .career_title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+.career_area .inner .career_box>div .career_box_info {
+  display: grid;
+  grid-template-columns: 17.8rem 1fr;
   gap: 5rem;
 
 }
 
-.resume .inner .resume_box>div ul {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-  padding-left: 3rem;
+.career_area ul .career_date {
+  margin-top: 1rem;
+  color: #BEBEBE;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 100%;
 }
 
 
-.resume .inner .resume_box>div li ul {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 0.8rem;
-  margin-top: 1.5rem;
+.career_area ul .career_title_name {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 100%;
 }
 
-.resume .sub_title {
-  font-size: 2.4rem;
-  font-weight: 500;
-  line-height: 1;
-}
-
-.resume ul .date_info {
+.career ul .job_text {
   font-size: 2rem;
   font-weight: 500;
-
+  line-height: 100%;
 }
 
-.resume ul .date_info span {
-  font-size: 1.4rem;
-}
-
-
-.resume ul .info_title {
-  margin-top: 1rem;
-  color: #dedede;
-  font-size: 1.8rem;
-  font-weight: 400;
-  line-height: 1.2;
-
-}
-
-.resume ul .info_title span {
-  color: #fefefe;
-  font-weight: 600;
-}
-
-.resume ul .info_text {
-  color: #dedede;
+.career_area ul .edu_text {
+  margin-top: 3rem;
+  color: #BEBEBE;
   font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.career_area ul .info_text {
+  margin-top: 1rem;
+  color: #BEBEBE;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.career_area .inner div.skills {
+  align-items: center;
+}
+
+.career_area .inner div.skills ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  color: #FEFEFE;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 100%;
 }
 
 
