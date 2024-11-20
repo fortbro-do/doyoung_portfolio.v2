@@ -10,11 +10,17 @@
       rel="stylesheet"
       href="https://unpkg.com/pageable@latest/dist/pageable.min.css"
     />
-    <script src="js/common.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+    <script type="module" src="js/common.js"></script>
+    <script src="js/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/pageable@latest/dist/pageable.min.js"></script>
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   </head>
   <body>
     <heade class="header">
@@ -45,7 +51,7 @@
       <section class="career_area">
         <div class="inner">
           <div class="goal_text">
-            <p>
+            <p data-aos="fade-up" data-aos-duration="1000">
               자신의 분야에서 성장할 수 있는 방법을 끊임없이 <br />
               고민하고, 행동해야 발전할 수 있다고 생각합니다. <br />
               <br />
@@ -55,9 +61,19 @@
             </p>
           </div>
           <div>
-            <h3>CAREER</h3>
+            <h3
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="100"
+            >
+              CAREER
+            </h3>
             <div class="career_box">
-              <div>
+              <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+              >
                 <p class="career_title">EXPERIENCE</p>
                 <ul class="career_box_list">
                   <li class="career_box_info">
@@ -89,7 +105,11 @@
                   </li>
                 </ul>
               </div>
-              <div>
+              <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="300"
+              >
                 <p class="career_title">EDUCATION</p>
                 <ul>
                   <li class="career_box_info">
@@ -122,7 +142,12 @@
                   </li>
                 </ul>
               </div>
-              <div class="skills">
+              <div
+                class="skills"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="300"
+              >
                 <p class="career_title">SKILLS</p>
                 <ul>
                   <li>HTML</li>
@@ -133,7 +158,12 @@
                   <li>ADOBE XD</li>
                 </ul>
               </div>
-              <div class="skills">
+              <div
+                class="skills"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="300"
+              >
                 <p class="career_title">SOLUTION</p>
                 <ul>
                   <li>아임웹</li>
@@ -145,76 +175,369 @@
         </div>
       </section>
       <section class="project_area">
-        <div class="project_box box1">
-          <div class="dimmed"></div>
-          <div class="box_left">
-            <a href="">
-              <img src="" alt="" />
-            </a>
-          </div>
-          <div class="box_right">box1</div>
+        <div
+          class="inner project_area_title"
+          class="skills"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <h3>PROJECTS</h3>
         </div>
-        <div class="project_box box2">
-          <div class="dimmed"></div>
-          <div class="box_left">
-            <a href="">
-              <img src="" alt="" />
-            </a>
+        <div class="project_area_box">
+          <div class="project_box box1">
+            <span class="dimmed"></span>
+            <div class="inner">
+              <div class="box_left">
+                <a href="#">
+                  <img src="/images/img_shinsegae.png" alt="신세계 대시보드" />
+                </a>
+              </div>
+              <div class="box_right">
+                <div>
+                  <div class="project_info">
+                    <span class="project_num">1 / 9</span>
+                    <div>
+                      <p class="project_name">신세계 상담 현황판</p>
+                      <div class="project_explan">
+                        <p>
+                          <span>2024 . 10 - 2024 . 11</span><br />
+                          상담 현황 Dashboard를 React를 사용하여 퍼블리싱
+                        </p>
+                        <p>기여도 100% / React / TaliwindCSS / Chart.js</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn_link">
+                    <a href="#">Go Site</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="box_right">box2</div>
+          <div class="project_box box2">
+            <span class="dimmed"></span>
+            <div class="inner">
+              <div class="box_left">
+                <a href="https://jusung.com/" target="_blank">
+                  <img src="/images/img_jusung.png" alt="주성엔지니어링" />
+                </a>
+              </div>
+              <div class="box_right">
+                <div>
+                  <div class="project_info">
+                    <span class="project_num">2 / 9</span>
+                    <div>
+                      <p class="project_name">주성엔지니어링</p>
+                      <div class="project_explan">
+                        <p>
+                          <span>2024 . 01 - 2024 . 08</span><br />
+                          주성엔지니어링 반응형 웹사이트 퍼블리싱
+                        </p>
+                        <p>기여도 50% / Chart.js / Swiper / PHP환경</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn_link">
+                    <a href="https://jusung.com/" target="_blank">Go Site</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project_box box3">
+            <span class="dimmed"></span>
+            <div class="inner">
+              <div class="box_left">
+                <a href="/kbi/index.html" target="_blank">
+                  <img src="/images/img_kbigroup.png" alt="KBI GROUP" />
+                </a>
+              </div>
+              <div class="box_right">
+                <div>
+                  <div class="project_info">
+                    <span class="project_num">3 / 9</span>
+                    <div>
+                      <p class="project_name">KBI GROUP</p>
+                      <div class="project_explan">
+                        <p>
+                          <span>2024 . 02 - 2024 . 06</span><br />
+                          KBI 반응형 웹사이트 6개 퍼블리싱
+                        </p>
+                        <p>기여도 100% / SEO작업 / jQuery / Swiper / GSAP</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn_link_box">
+                    <p>Go Site</p>
+                    <ul>
+                      <li>
+                        <a href="/kbi/index.html" target="_blank"
+                          ><img src="/images/img_kbigroup_s.png" alt="KBIGROUP"
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="http://www.kukin.co.kr/" target="_blank"
+                          ><img
+                            src="/images/img_kbikukin.png"
+                            alt="KBI국인산업"
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="http://kbitech.kr/" target="_blank"
+                          ><img src="/images/img_kbitech.png" alt="KBI테크"
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="http://smep.co.kr/" target="_blank"
+                          ><img
+                            src="/images/img_kbisme.png"
+                            alt="KBI석문에너지"
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="http://kbiultra.com/" target="_blank"
+                          ><img src="/images/img_kbiultra.png" alt="KBI울트라"
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="http://kbidgec.com/" target="_blank"
+                          ><img src="/images/img_kbidg.png" alt="KBI대구에코"
+                        /></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project_box box4">
+            <span class="dimmed"></span>
+            <div class="inner">
+              <div class="box_left">
+                <a href="https://goodsign.seoul.go.kr/" target="_blank">
+                  <img
+                    src="/images/img_web_accessibility.png"
+                    alt="서울좋은간판 웹 접근성 인증마크 취득"
+                  />
+                </a>
+              </div>
+              <div class="box_right">
+                <div>
+                  <div class="project_info">
+                    <span class="project_num">4 / 9</span>
+                    <div>
+                      <p class="project_name">서울좋은간판</p>
+                      <div class="project_explan">
+                        <p>
+                          <span>2024 . 09 - 2024 . 10</span><br />
+                          서울좋은간판 웹 접근성 인증마크 취득
+                        </p>
+                        <p>기여도 100% / 웹 접근성 치짐 / 웹 표준 준수</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn_link">
+                    <a href="https://goodsign.seoul.go.kr/" target="_blank"
+                      >Go Site</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project_box box5">
+            <span class="dimmed"></span>
+            <div class="inner">
+              <div class="box_left">
+                <a
+                  href="https://evn.hec.co.kr/brand/BrandIntroduction.do"
+                  target="_blank"
+                >
+                  <img src="/images/img_ev&.png" alt="EV&" />
+                </a>
+              </div>
+              <div class="box_right">
+                <div>
+                  <div class="project_info">
+                    <span class="project_num">5 / 9</span>
+                    <div>
+                      <p class="project_name">현대엔지니어링 EV&</p>
+                      <div class="project_explan">
+                        <p>
+                          <span>2024 . 05 - 2024 . 05</span><br />
+                          현대엔지니어링 EV& 반응형 웹사이트 퍼블리싱
+                        </p>
+                        <p>기여도 100% / CSS애니메이션 / GSAP / AOS</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn_link">
+                    <a
+                      href="https://evn.hec.co.kr/brand/BrandIntroduction.do"
+                      target="_blank"
+                      >Go Site</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project_box box6">
+            <span class="dimmed"></span>
+            <div class="inner">
+              <div class="box_left">
+                <a href="http://kxtal.nosboard.kr/" target="_blank">
+                  <img src="/images/img_kxtal.png" alt="K-XTAL" />
+                </a>
+              </div>
+              <div class="box_right">
+                <div>
+                  <div class="project_info">
+                    <span class="project_num">6 / 9</span>
+                    <div>
+                      <p class="project_name">제일전자</p>
+                      <div class="project_explan">
+                        <p>
+                          <span>2024 . 04 - 2024 . 05</span><br />
+                          제일전자 반응형 웹사이트 퍼블리싱
+                        </p>
+                        <p>기여도 100% / 테이블 / Grid</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn_link">
+                    <a href="http://kxtal.nosboard.kr/" target="_blank"
+                      >Go Site</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project_box box7">
+            <span class="dimmed"></span>
+            <div class="inner">
+              <div class="box_left">
+                <a href="https://cymhospital.co.kr/" target="_blank">
+                  <img
+                    src="/images/img_yonsei.png"
+                    alt="연세 천용민 정형외과"
+                  />
+                </a>
+              </div>
+              <div class="box_right">
+                <div>
+                  <div class="project_info">
+                    <span class="project_num">7 / 9</span>
+                    <div>
+                      <p class="project_name">연세 천용민 정형외과</p>
+                      <div class="project_explan">
+                        <p>
+                          <span>2024 . 05 - 2024 . 06</span><br />
+                          연세 천용민 정형외과 반응형 웹사이트 퍼블리싱
+                        </p>
+                        <p>기여도 80% / jQuery / Swiper</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn_link">
+                    <a href="https://cymhospital.co.kr/" target="_blank"
+                      >Go Site</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project_box box8">
+            <span class="dimmed"></span>
+            <div class="inner">
+              <div class="box_left">
+                <a href="https://www.gsneotek.com/" target="_blank">
+                  <img src="/images/img_gsneotek.png" alt="GS Neotek" />
+                </a>
+              </div>
+              <div class="box_right">
+                <div>
+                  <div class="project_info">
+                    <span class="project_num">8 / 9</span>
+                    <div>
+                      <p class="project_name">GS Neotek</p>
+                      <div class="project_explan">
+                        <p>
+                          <span>2024 . 08 - 2024 . 10</span><br />
+                          GS네오텍 반응형 웹사이트 퍼블리싱
+                        </p>
+                        <p>기여도 100% / 아임웹 / 운영가이드 제작</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn_link">
+                    <a href="https://www.gsneotek.com/" target="_blank"
+                      >Go Site</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project_box box9">
+            <span class="dimmed"></span>
+            <div class="inner">
+              <div class="box_left">
+                <a href="https://pmxinc.ai" target="_blank">
+                  <img src="/images/img_pmx.png" alt="피맥스" />
+                </a>
+              </div>
+              <div class="box_right">
+                <div>
+                  <div class="project_info">
+                    <span class="project_num">9 / 9</span>
+                    <div>
+                      <p class="project_name">피맥스</p>
+                      <div class="project_explan">
+                        <p>
+                          <span>2024 . 09 - 2024 . 10</span><br />
+                          피맥스 반응형 웹사이트 퍼블리싱
+                        </p>
+                        <p>기여도 100% / 아임웹</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn_link">
+                    <a href="https://pmxinc.ai" target="_blank">Go Site</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="project_box box3">
-          <div class="dimmed"></div>
-          <div class="box_left">
-            <a href="">
-              <img src="" alt="" />
-            </a>
+      </section>
+      <section class="contact_area">
+        <div class="inner">
+          <h3>CONTACT</h3>
+          <div class="contact_box">
+            <div>
+              <p>
+                오늘보다 내일 더 발전하는, 웹퍼블리셔 김도영입니다.<br />
+                포트폴리오를 봐주셔서 감사합니다.
+              </p>
+              <div>
+                <p>TEL. 010 - 3318 -1804</p>
+                <p>MAIL. ehdud1223@gmail.com</p>
+              </div>
+            </div>
+            <p>
+              ©DOYOUNG2024. All Rights Reserved <br />본 페이지는 상업적 목적이
+              아닌 개인 포트폴리오용으로 제작되었습니다.
+            </p>
           </div>
-          <div class="box_right">box3</div>
-        </div>
-        <div class="project_box box4">
-          <div class="dimmed"></div>
-          <div class="box_left">
-            <a href="">
-              <img src="" alt="" />
-            </a>
-          </div>
-          <div class="box_right">box4</div>
-        </div>
-        <div class="project_box box5">
-          <div class="dimmed"></div>
-          <div class="box_left">
-            <a href="">
-              <img src="" alt="" />
-            </a>
-          </div>
-          <div class="box_right">box5</div>
-        </div>
-        <div class="project_box box6">
-          <div class="dimmed"></div>
-          <div class="box_left">
-            <a href="">
-              <img src="" alt="" />
-            </a>
-          </div>
-          <div class="box_right">box6</div>
-        </div>
-        <div class="project_box box7">
-          <div class="dimmed"></div>
-          <div class="box_left">
-            <a href="">
-              <img src="" alt="" />
-            </a>
-          </div>
-          <div class="box_right">box7</div>
         </div>
       </section>
     </main>
     <script>
-      // GSAP ScrollTrigger 애니메이션 설정
       gsap.registerPlugin(ScrollTrigger);
 
-      // 텍스트 라인 애니메이션
       const visualAni = gsap.timeline({
         scrollTrigger: {
           trigger: ".home_area .home_title",
@@ -239,28 +562,31 @@
             scrub: 1,
           },
           opacity: 1,
+          zIndex: 1,
         });
       });
-      
+
       // ScrollTrigger setup for changing background and text color
       ScrollTrigger.create({
         trigger: ".career_area", // The trigger element
         start: "bottom 0", // Start when bottom of career_area meets bottom of viewport
         onEnter: () => {
-          gsap.to(".project_area .project_box", {
-            backgroundColor: "#fefefe ", // Change background color
+          gsap.to(".project_area .project_box.box1", {
+            backgroundColor: "#F8D338 ", // Change background color
             color: "#000", // Change text color
             duration: 0.5, // Animation duration
           });
         },
         onLeaveBack: () => {
           gsap.to(".project_area .project_box", {
-            backgroundColor: "#111", // Reset to initial background color
+            backgroundColor: "", // Reset to initial background color
             color: "#fff", // Reset to initial text color
             duration: 0.5,
           });
         },
       });
+
+      AOS.init();
     </script>
   </body>
 </html>
