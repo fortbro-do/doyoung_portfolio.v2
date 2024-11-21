@@ -264,7 +264,7 @@ body {
 }
 
 .project_area .project_box.box2 .box_right>div .btn_link a:hover {
-  color: #007E3A;
+  color: #016191;
 }
 
 .project_area .project_box.box3 .box_right>div .btn_link a:hover {
@@ -282,7 +282,7 @@ body {
 }
 
 .project_area .project_box.box5 .box_right>div .btn_link a:hover {
-  color: #0B2C52;
+  color: #a1a1a1;
 }
 
 .project_area .project_box.box6 .box_right>div .btn_link a:hover {
@@ -294,11 +294,11 @@ body {
 }
 
 .project_area .project_box.box8 .box_right>div .btn_link a:hover {
-  color: #074273;
+  color: #00a040;
 }
 
 .project_area .project_box.box9 .box_right>div .btn_link a:hover {
-  color: #99A88E;
+  color: #fefefe;
 }
 
 .project_area .project_box .box_right>div .btn_link_box {
@@ -343,7 +343,7 @@ body {
 
 .project_area .project_info .project_num {
   color: #FEFEFE;
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 400;
   line-height: 120%;
   letter-spacing: -1.8px;
@@ -351,7 +351,7 @@ body {
 
 .project_area .project_info .project_name {
   color: #FEFEFE;
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: 700;
   line-height: 120%;
   letter-spacing: -2.4px;
@@ -365,17 +365,17 @@ body {
 
 .project_area .project_info .project_explan {
   display: grid;
-  gap: 25px;
+  gap: 2.5rem;
   margin-top: 15px;
   color: #FEFEFE;
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 400;
   line-height: 120%;
   letter-spacing: -1.8px;
 }
 
 .project_area .project_info .project_explan p:last-child {
-  font-size: 20px;
+  font-size: 2rem;
   letter-spacing: 1px;
 }
 
@@ -383,7 +383,7 @@ body {
 
 
 .project_area .project_box.box2 {
-  background-color: #007E3A;
+  background-color: #016191;
 }
 
 .project_area .project_box.box3 {
@@ -395,7 +395,7 @@ body {
 }
 
 .project_area .project_box.box5 {
-  background-color: #0B2C52;
+  background-color: #a1a1a1;
 }
 
 .project_area .project_box.box6 {
@@ -407,17 +407,19 @@ body {
 }
 
 .project_area .project_box.box8 {
-  background-color: #074273;
+  background-color: #00a040;
 }
 
 .project_area .project_box.box9 {
-  background-color: #99A88E;
+  background-color: #fefefe;
 }
 
 .project_area .project_box.box3 p,
 .project_area .project_box.box3 span,
 .project_area .project_box.box4 p,
-.project_area .project_box.box4 span {
+.project_area .project_box.box4 span,
+.project_area .project_box.box9 p,
+.project_area .project_box.box9 span {
   color: #111;
 }
 
@@ -431,7 +433,7 @@ body {
 
 .contact_area h3 {
   color: #2B2BF1;
-  font-size: 100px;
+  font-size: 10rem;
   font-weight: 800;
   line-height: 100%;
 }
@@ -450,7 +452,7 @@ body {
   margin-top: 30px;
   color: #FEFEFE;
   font-family: Pretendard;
-  font-size: 20px;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 800;
   line-height: 150%;
@@ -465,7 +467,7 @@ body {
 
 .contact_area .contact_box>p {
   color: #FEFEFE;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 400;
   line-height: 150%;
   text-align: center;
