@@ -282,7 +282,7 @@ body {
 }
 
 .project_area .project_box.box5 .box_right>div .btn_link a:hover {
-  color: #a1a1a1;
+  color: #333333;
 }
 
 .project_area .project_box.box6 .box_right>div .btn_link a:hover {
@@ -299,6 +299,11 @@ body {
 
 .project_area .project_box.box9 .box_right>div .btn_link a:hover {
   color: #fefefe;
+  background-color: #111;
+}
+.project_area .project_box.box9 .box_right>div .btn_link a {
+  border: 1px solid #111;
+  color: #111;
 }
 
 .project_area .project_box .box_right>div .btn_link_box {
@@ -375,7 +380,7 @@ body {
 }
 
 .project_area .project_info .project_explan p:last-child {
-  font-size: 2rem;
+  font-size: 1.8rem;
   letter-spacing: 1px;
 }
 
@@ -391,11 +396,11 @@ body {
 }
 
 .project_area .project_box.box4 {
-  background-color: #FFF;
+  background-color: #fefefe;
 }
 
 .project_area .project_box.box5 {
-  background-color: #a1a1a1;
+  background-color: #333333;
 }
 
 .project_area .project_box.box6 {
