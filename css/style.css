@@ -248,10 +248,10 @@ body {
   border-radius: 50px;
   border: 1px solid #FEFEFE;
   color: #FEFEFE;
-  font-size: 25px;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 600;
   line-height: 120%;
-  letter-spacing: -1.8px;
+  letter-spacing: -1px;
   transition: .4s;
 }
 
@@ -306,7 +306,7 @@ body {
   border-radius: 50px;
   border: 1px solid #111;
   color: #111;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 700;
   line-height: 120%;
   letter-spacing: -1.8px;
@@ -372,6 +372,11 @@ body {
   font-weight: 400;
   line-height: 120%;
   letter-spacing: -1.8px;
+}
+
+.project_area .project_info .project_explan p:last-child {
+  font-size: 20px;
+  letter-spacing: 1px;
 }
 
 
