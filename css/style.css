@@ -116,7 +116,7 @@ body {
 .career_area .inner {
   display: flex;
   justify-content: space-between;
-  gap: 6rem;
+  gap: 10rem;
 }
 
 .career_area .inner .goal_text {
