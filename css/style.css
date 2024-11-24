@@ -6,6 +6,24 @@ body {
   position: relative;
 }
 
+.img_box img {
+  width: auto;
+  max-width: 100%;
+
+}
+
+@media (width < 1500px) {
+  .br_hide {
+    display: none;
+  }
+}
+
+@media (width < 1024px) {
+  .br_hide {
+    display: block;
+  }
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -37,7 +55,7 @@ body {
 
 .container .inner {
   width: 100%;
-  max-width: 1420px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -58,22 +76,47 @@ body {
 .home_title {
   display: grid;
   grid-template-columns: 1fr;
+  padding: 3rem 1.6rem;
   align-items: center;
   color: #2b2bf1;
   font-size: 20rem;
   line-height: 1;
 }
 
+@media (width < 1500px) {
+
+
+  .home_title {
+    font-size: 15rem;
+  }
+}
+
+@media (width < 1024px) {
+  .container h3 {
+    font-size: 8rem;
+  }
+
+  .home_area {
+    height: 100vh;
+  }
+
+  .home_title {
+    font-size: 10rem;
+  }
+}
+
+
 
 /* 이력 */
 .career_area {
   height: 100vh;
-  padding: 5rem 0;
+  padding: 5rem;
 }
 
 .career_area .inner {
-  display: grid;
-  grid-template-columns: .8fr 1fr;
+  display: flex;
+  justify-content: space-between;
+  gap: 6rem;
 }
 
 .career_area .inner .goal_text {
@@ -91,15 +134,15 @@ body {
   display: flex;
   flex-direction: column;
   gap: 8rem;
-  margin-top: 3.12rem;
+  margin-top: 5rem;
   color: #fefefe;
 }
 
 .career_area .inner .career_box>div {
   display: grid;
-  grid-template-columns: 14.2rem 1fr;
+  grid-template-columns: 23rem 1fr;
   align-items: flex-start;
-  gap: 9.5rem;
+  gap: 8rem;
 }
 
 .career_area .inner .career_box>div .career_box_list {
@@ -120,7 +163,6 @@ body {
   display: grid;
   grid-template-columns: 17.8rem 1fr;
   gap: 5rem;
-
 }
 
 .career_area ul .career_date {
@@ -167,6 +209,7 @@ body {
 .career_area .inner div.skills ul {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 2rem;
   color: #FEFEFE;
   font-size: 1.8rem;
@@ -175,8 +218,118 @@ body {
 }
 
 
+@media (width < 1500px) {
+  .career_area .inner {
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+  }
+
+  .career_area .inner>div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+
+  .career_area .inner>div:last-child {
+    height: 100%;
+  }
 
 
+
+  .career_area .inner .career_box {
+    justify-self: flex-end;
+    gap: 3rem;
+    margin-top: 1.5rem;
+  }
+}
+
+@media (width < 1025px) {
+
+
+  .career_area {
+    height: 100%;
+  }
+
+  .career_area .inner {
+    gap: 8rem;
+  }
+
+
+
+  .career_area .inner .career_box>div .career_box_list {
+    gap: 2rem;
+  }
+
+  .career_area .inner .career_box {
+    justify-self: auto;
+  }
+
+  .career_area .inner .career_box>div {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .career_area .inner .career_box>div ul {
+    padding-left: 2rem;
+  }
+
+}
+
+@media (width < 768px) {
+  .career_area {
+    padding: 5rem 2rem;
+  }
+
+  .career_area .inner .career_box {
+    gap: 9rem;
+  }
+
+  .career_area .inner .career_box>div .career_box_info {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .career_area .inner .career_box>div .career_box_list {
+    gap: 5rem;
+  }
+
+  .career_area ul .edu_text {
+    margin-top: 0;
+  }
+
+  .career_area .inner .goal_text {
+    font-size: 3rem;
+  }
+
+  .career_area .career_title {
+    font-size: 4.8rem;
+  }
+
+  .career_area ul .career_title_name {
+    font-size: 3.8rem;
+  }
+
+  .career_area ul .career_date {
+    font-size: 2.4rem;
+  }
+
+  .career_area ul .job_text {
+    font-size: 2.8rem;
+  }
+
+  .career_area ul .job_text {
+    font-size: 3.4rem;
+  }
+
+  .career_area ul .edu_text {
+    font-size: 3.4rem;
+  }
+
+  .career_area .inner .career_box>div ul {
+    font-size: 3rem;
+  }
+}
 
 /* 프로젝트 */
 
@@ -194,10 +347,11 @@ body {
 .project_area {
   width: 100%;
   position: relative;
+  padding: 5rem 0 0;
 }
 
-.project_area_title {
-  padding: 80px 0;
+.project_area_title>h3 {
+  padding: 8rem 0;
 }
 
 
@@ -218,10 +372,14 @@ body {
 
 
 
+
+
 .project_area .project_box .box_left,
 .project_area .project_box .box_right {
-  height: 100%;
-  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5rem;
 }
 
 .project_area .project_box .box_left a {
@@ -229,7 +387,6 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100%;
 }
 
 .project_area .project_box .box_right>div {
@@ -237,18 +394,17 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 100px;
+  gap: 10rem;
   width: 100%;
-  height: 100%;
 }
 
 .project_area .project_box .box_right>div .btn_link a {
   display: block;
-  padding: 10px 30px;
-  border-radius: 50px;
+  padding: 1rem 3rem;
+  border-radius: 5rem;
   border: 1px solid #FEFEFE;
   color: #FEFEFE;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 600;
   line-height: 120%;
   letter-spacing: -1px;
@@ -301,17 +457,18 @@ body {
   color: #fefefe;
   background-color: #111;
 }
+
 .project_area .project_box.box9 .box_right>div .btn_link a {
   border: 1px solid #111;
   color: #111;
 }
 
 .project_area .project_box .box_right>div .btn_link_box {
-  padding: 30px;
-  border-radius: 50px;
+  padding: 3rem;
+  border-radius: 5rem;
   border: 1px solid #111;
   color: #111;
-  font-size: 22px;
+  font-size: 2.2rem;
   font-weight: 700;
   line-height: 120%;
   letter-spacing: -1.8px;
@@ -321,20 +478,20 @@ body {
 .project_area .project_box .box_right>div .btn_link_box ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  margin-top: 20px;
+  gap: 2rem;
+  margin-top: 2rem;
   text-align: center;
 }
 
 .project_area .project_box .box_right>div .btn_link_box ul a {
   display: block;
-  padding: 10px 0;
-  border-bottom: 2px solid transparent;
+  padding: 1rem 0;
+  border-bottom: 0.2rem solid transparent;
   transition: .4s;
 }
 
 .project_area .project_box .box_right>div .btn_link_box ul a:hover {
-  border-bottom: 2px solid #111;
+  border-bottom: 0.2rem solid #111;
 }
 
 .project_area .project_info {
@@ -342,7 +499,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 2rem;
   text-align: center;
 }
 
@@ -371,7 +528,7 @@ body {
 .project_area .project_info .project_explan {
   display: grid;
   gap: 2.5rem;
-  margin-top: 15px;
+  margin-top: 1.5rem;
   color: #FEFEFE;
   font-size: 2.4rem;
   font-weight: 400;
@@ -429,16 +586,91 @@ body {
 }
 
 
+@media (width < 1280px) {
+  .project_area .project_box>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+  }
+
+  .project_area .project_box .box_right>div {
+    gap: 5rem;
+  }
+
+  .project_area .project_box .box_right>div .btn_link_box {
+    border: none;
+  }
+
+  .project_area .project_box .box_right>div .btn_link_box ul a {
+    padding: 2rem 3rem;
+    border-radius: 5rem;
+    border: 1px solid #111;
+    color: #111;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: -1.8px;
+    text-align: end;
+  }
+
+  .project_area .project_box .box_right>div .btn_link_box ul a:hover {
+    border-bottom: 1px solid #111;
+  }
+
+  .project_area .project_box .box_right>div .btn_link a:hover {
+    background-color: transparent !important;
+    color: #fefefe !important;
+  }
+
+  .project_area .project_box.box3 .box_right>div .btn_link a:hover,
+  .project_area .project_box.box4 .box_right>div .btn_link a:hover,
+  .project_area .project_box.box9 .box_right>div .btn_link a:hover {
+    color: #111 !important;
+  }
+
+}
+
+@media (width < 768px) {
+  .project_area .project_box .box_right>div .btn_link a {
+    display: block;
+    padding: 2rem 6rem;
+    border-radius: 6rem;
+    font-size: 3.6rem;
+  }
+
+  .project_area .project_info .project_num {
+    font-size: 4rem
+  }
+
+  .project_area .project_info .project_name {
+    font-size: 7rem;
+  }
+
+  .project_area .project_info .project_explan {
+    font-size: 4.8rem;
+  }
+
+  .project_area .project_info .project_explan span {
+    font-size: 4rem;
+  }
+
+  .project_area .project_info .project_explan p:last-child {
+    font-size: 2.6rem;
+  }
+}
+
+
 
 /* contact */
 
 .contact_area {
-  padding: 100px 0;
+  padding: 10rem 0;
 }
 
 .contact_area h3 {
   color: #2B2BF1;
-  font-size: 10rem;
+  /* font-size: 10rem; */
   font-weight: 800;
   line-height: 100%;
 }
@@ -446,15 +678,15 @@ body {
 .contact_area .contact_box {
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  padding: 0 20px;
+  gap: 3rem;
+  padding: 0 2rem;
 }
 
 .contact_area .contact_box>div {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 30px;
+  margin-top: 3rem;
   color: #FEFEFE;
   font-family: Pretendard;
   font-size: 2rem;
@@ -466,7 +698,7 @@ body {
 .contact_area .contact_box>div>div {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 2.5rem;
 }
 
 
@@ -476,4 +708,43 @@ body {
   font-weight: 400;
   line-height: 150%;
   text-align: center;
+}
+
+@media (width < 1400px) {
+  .project_area_title>h3 {
+    padding: 8rem 5rem;
+  }
+}
+
+@media (width < 1280px) {
+  .contact_area {
+    padding: 8rem 1.6rem 3rem;
+  }
+
+
+  .contact_area .contact_box>div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contact_area .contact_box>div>div {
+    justify-self: flex-end;
+  }
+}
+
+@media (width < 768px) {
+  .contact_area .contact_box>div {
+    font-size: 3rem;
+  }
+
+  .contact_area .contact_box>div>div {
+    justify-self: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact_area .contact_box>p {
+    font-size: 2rem;
+  }
 }

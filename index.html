@@ -30,7 +30,7 @@
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   </head>
   <body>
-    <heade class="header">
+    <!-- <header class="header">
       <h1>logo</h1>
       <nav>
         <ul>
@@ -45,7 +45,7 @@
           </li>
         </ul>
       </nav>
-    </heade>
+    </header> -->
     <main class="container">
       <section class="home_area">
         <div class="inner">
@@ -59,11 +59,13 @@
         <div class="inner">
           <div class="goal_text">
             <p data-aos="fade-up" data-aos-duration="1000">
-              자신의 분야에서 성장할 수 있는 방법을 끊임없이 <br />
+              자신의 분야에서 성장할 수 있는 방법을 끊임없이
+              <br class="br_hide" />
               고민하고, 행동해야 발전할 수 있다고 생각합니다. <br />
               <br />
-              현재에 만족하지 않고 꾸준히 성장을 위해 <br />
-              고민하고 행동하여 결과로 능력을 보여줄 수 있는 <br />
+              현재에 만족하지 않고 꾸준히 성장을 위해 <br class="br_hide" />
+              고민하고 행동하여 결과로 능력을 보여줄 수 있는
+              <br />
               <span>발전하는 웹퍼블리셔</span>가 되겠습니다.
             </p>
           </div>
@@ -118,7 +120,7 @@
                 data-aos-delay="300"
               >
                 <p class="career_title">EDUCATION</p>
-                <ul>
+                <ul class="career_box_list">
                   <li class="career_box_info">
                     <div>
                       <p class="career_title_name">하이미디어 컴퓨터학원</p>
@@ -163,6 +165,8 @@
                   <li>JAVASCRIPT</li>
                   <li>FIGMA</li>
                   <li>ADOBE XD</li>
+                  <li>PHOTOSHOP</li>
+                  <li>ILLUSTRATOR</li>
                 </ul>
               </div>
               <div
@@ -195,7 +199,11 @@
             <span class="dimmed"></span>
             <div class="inner">
               <div class="box_left">
-                <a href="https://aiccdashboard.netlify.app/" target="_blank">
+                <a
+                  href="https://aiccdashboard.netlify.app/"
+                  target="_blank"
+                  class="img_box"
+                >
                   <img src="images/img_shinsegae.png" alt="신세계 대시보드" />
                 </a>
               </div>
@@ -208,7 +216,7 @@
                       <div class="project_explan">
                         <p>
                           <span>2024 . 10 - 2024 . 11</span><br />
-                          상담 현황 Dashboard를 React를 사용하여 퍼블리싱
+                          상담현황 대시보드 React 퍼블리싱
                         </p>
                         <p>기여도 100% / React / TaliwindCSS / Chart.js</p>
                       </div>
@@ -227,7 +235,7 @@
             <span class="dimmed"></span>
             <div class="inner">
               <div class="box_left">
-                <a href="https://jusung.com/" target="_blank">
+                <a href="https://jusung.com/" target="_blank" class="img_box">
                   <img src="images/img_jusung.png" alt="주성엔지니어링" />
                 </a>
               </div>
@@ -240,7 +248,7 @@
                       <div class="project_explan">
                         <p>
                           <span>2024 . 01 - 2024 . 08</span><br />
-                          주성엔지니어링 반응형 웹사이트 퍼블리싱
+                          반응형 웹사이트 퍼블리싱
                         </p>
                         <p>기여도 70% / Chart.js / Swiper / PHP환경</p>
                       </div>
@@ -257,7 +265,7 @@
             <span class="dimmed"></span>
             <div class="inner">
               <div class="box_left">
-                <a href="/kbi/index.html" target="_blank">
+                <a href="/kbi/index.html" target="_blank" class="img_box">
                   <img src="images/img_kbigroup.png" alt="KBI GROUP" />
                 </a>
               </div>
@@ -270,7 +278,7 @@
                       <div class="project_explan">
                         <p>
                           <span>2024 . 02 - 2024 . 06</span><br />
-                          KBI 반응형 웹사이트 6개 퍼블리싱
+                          반응형 웹사이트 6개 퍼블리싱
                         </p>
                         <p>기여도 100% / SEO작업 / jQuery / Swiper / GSAP</p>
                       </div>
@@ -280,32 +288,50 @@
                     <p>Go Site</p>
                     <ul>
                       <li>
-                        <a href="/kbi/index.html" target="_blank"
+                        <a
+                          href="/kbi/index.html"
+                          target="_blank "
+                          class="img_box"
                           ><img src="images/img_kbigroup_s.png" alt="KBIGROUP"
                         /></a>
                       </li>
                       <li>
-                        <a href="http://www.kukin.co.kr/" target="_blank"
+                        <a
+                          href="http://www.kukin.co.kr/"
+                          target="_blank "
+                          class="img_box"
                           ><img src="images/img_kbikukin.png" alt="KBI국인산업"
                         /></a>
                       </li>
                       <li>
-                        <a href="http://kbitech.kr/" target="_blank"
+                        <a
+                          href="http://kbitech.kr/"
+                          target="_blank "
+                          class="img_box"
                           ><img src="images/img_kbitech.png" alt="KBI테크"
                         /></a>
                       </li>
                       <li>
-                        <a href="http://kbiultra.com/" target="_blank"
+                        <a
+                          href="http://kbiultra.com/"
+                          target="_blank "
+                          class="img_box"
                           ><img src="images/img_kbiultra.png" alt="KBI울트라"
                         /></a>
                       </li>
                       <li>
-                        <a href="http://smep.co.kr/" target="_blank"
+                        <a
+                          href="http://smep.co.kr/"
+                          target="_blank "
+                          class="img_box"
                           ><img src="images/img_kbisme.png" alt="KBI석문에너지"
                         /></a>
                       </li>
                       <li>
-                        <a href="http://kbidgec.com/" target="_blank"
+                        <a
+                          href="http://kbidgec.com/"
+                          target="_blank "
+                          class="img_box"
                           ><img src="images/img_kbidg.png" alt="KBI대구에코"
                         /></a>
                       </li>
@@ -319,7 +345,11 @@
             <span class="dimmed"></span>
             <div class="inner">
               <div class="box_left">
-                <a href="https://goodsign.seoul.go.kr/" target="_blank">
+                <a
+                  href="https://goodsign.seoul.go.kr/"
+                  target="_blank"
+                  class="img_box"
+                >
                   <img
                     src="images/img_web_accessibility.png"
                     alt="서울좋은간판 웹 접근성 인증마크 취득"
@@ -335,7 +365,7 @@
                       <div class="project_explan">
                         <p>
                           <span>2024 . 09 - 2024 . 10</span><br />
-                          서울좋은간판 웹 접근성 인증마크 취득
+                          웹 접근성 인증마크 취득
                         </p>
                         <p>기여도 100% / 웹 접근성 치짐 / 웹 표준 준수</p>
                       </div>
@@ -357,6 +387,7 @@
                 <a
                   href="https://evn.hec.co.kr/brand/BrandIntroduction.do"
                   target="_blank"
+                  class="img_box"
                 >
                   <img src="images/img_ev&.png" alt="EV&" />
                 </a>
@@ -370,7 +401,7 @@
                       <div class="project_explan">
                         <p>
                           <span>2024 . 05 - 2024 . 05</span><br />
-                          현대엔지니어링 EV& 반응형 웹사이트 퍼블리싱
+                          반응형 웹사이트 퍼블리싱
                         </p>
                         <p>기여도 100% / CSS애니메이션 / GSAP / AOS</p>
                       </div>
@@ -391,7 +422,11 @@
             <span class="dimmed"></span>
             <div class="inner">
               <div class="box_left">
-                <a href="http://kxtal.nosboard.kr/" target="_blank">
+                <a
+                  href="http://kxtal.nosboard.kr/"
+                  target="_blank"
+                  class="img_box"
+                >
                   <img src="images/img_kxtal.png" alt="K-XTAL" />
                 </a>
               </div>
@@ -404,7 +439,7 @@
                       <div class="project_explan">
                         <p>
                           <span>2024 . 04 - 2024 . 05</span><br />
-                          제일전자 반응형 웹사이트 퍼블리싱
+                          반응형 웹사이트 퍼블리싱
                         </p>
                         <p>기여도 100% / 테이블 / Grid</p>
                       </div>
@@ -423,7 +458,11 @@
             <span class="dimmed"></span>
             <div class="inner">
               <div class="box_left">
-                <a href="https://cymhospital.co.kr/" target="_blank">
+                <a
+                  href="https://cymhospital.co.kr/"
+                  target="_blank"
+                  class="img_box"
+                >
                   <img src="images/img_yonsei.png" alt="연세 천용민 정형외과" />
                 </a>
               </div>
@@ -436,7 +475,7 @@
                       <div class="project_explan">
                         <p>
                           <span>2024 . 05 - 2024 . 06</span><br />
-                          연세 천용민 정형외과 반응형 웹사이트 퍼블리싱
+                          반응형 웹사이트 퍼블리싱
                         </p>
                         <p>기여도 80% / jQuery / Swiper</p>
                       </div>
@@ -455,7 +494,11 @@
             <span class="dimmed"></span>
             <div class="inner">
               <div class="box_left">
-                <a href="https://www.gsneotek.com/" target="_blank">
+                <a
+                  href="https://www.gsneotek.com/"
+                  target="_blank"
+                  class="img_box"
+                >
                   <img src="images/img_gsneotek.png" alt="GS Neotek" />
                 </a>
               </div>
@@ -468,7 +511,7 @@
                       <div class="project_explan">
                         <p>
                           <span>2024 . 08 - 2024 . 10</span><br />
-                          GS네오텍 반응형 웹사이트 퍼블리싱
+                          반응형 웹사이트 퍼블리싱
                         </p>
                         <p>기여도 100% / 아임웹 / 운영가이드 제작</p>
                       </div>
@@ -487,7 +530,7 @@
             <span class="dimmed"></span>
             <div class="inner">
               <div class="box_left">
-                <a href="https://pmxinc.ai" target="_blank">
+                <a href="https://pmxinc.ai" target="_blank" class="img_box">
                   <img src="images/img_pmx.png" alt="피맥스" />
                 </a>
               </div>
@@ -500,7 +543,7 @@
                       <div class="project_explan">
                         <p>
                           <span>2024 . 09 - 2024 . 10</span><br />
-                          피맥스 반응형 웹사이트 퍼블리싱
+                          반응형 웹사이트 퍼블리싱
                         </p>
                         <p>기여도 100% / 아임웹</p>
                       </div>
@@ -540,22 +583,28 @@
     <script>
       gsap.registerPlugin(ScrollTrigger);
 
-      const visualAni = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".home_area .home_title",
-          start: "top 20%",
-          end: "bottom top",
-          scrub: 1,
+      ScrollTrigger.matchMedia({
+        "(max-width: 1024px)": function () {
+          const visualAni = gsap.timeline({
+            scrollTrigger: {
+              trigger: ".home_area .home_title",
+              start: "top 20%",
+              end: "bottom top",
+              scrub: 1,
+            },
+          });
+
+          visualAni
+            .addLabel("a")
+            .to(".home_area .txt_box1", { xPercent: 40 }, "a")
+            .to(".home_area .txt_box2", { xPercent: -40 }, "a");
+
+          ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
         },
       });
 
-      visualAni
-        .addLabel("a")
-        .to(".home_area .txt_box1", { xPercent: 40 }, "a")
-        .to(".home_area .txt_box2", { xPercent: -40 }, "a");
-
-      $(".project_box").each(function (i, el) {
-        child = $(this).find(".dimmed");
+      gsap.utils.toArray(".project_box").forEach((el) => {
+        const child = el.querySelector(".dimmed");
         gsap.to(child, {
           scrollTrigger: {
             trigger: el,
@@ -568,21 +617,20 @@
         });
       });
 
-      // ScrollTrigger setup for changing background and text color
       ScrollTrigger.create({
-        trigger: ".career_area", // The trigger element
-        start: "bottom 0", // Start when bottom of career_area meets bottom of viewport
+        trigger: ".career_area",
+        start: "bottom 0",
         onEnter: () => {
           gsap.to(".project_area .project_box.box1", {
-            backgroundColor: "#F8D338 ", // Change background color
-            color: "#000", // Change text color
-            duration: 0.5, // Animation duration
+            backgroundColor: "#F8D338",
+            color: "#000",
+            duration: 0.5,
           });
         },
         onLeaveBack: () => {
           gsap.to(".project_area .project_box", {
-            backgroundColor: "", // Reset to initial background color
-            color: "#fff", // Reset to initial text color
+            backgroundColor: "",
+            color: "#fff",
             duration: 0.5,
           });
         },

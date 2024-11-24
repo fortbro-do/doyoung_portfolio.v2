@@ -1,16 +1,67 @@
-
 /* Reset */
-html, body, h1, h2, h3, h4, h5, h6, div, p, blockquote, pre, code, address, ul, ol, li, nav, section, article, header, footer, main, aside, dl, dt, dd, table, thead, tbody, tfoot, label, caption, th, td, form, fieldset, legend, hr, input, button, textarea, object, figure, figcaption {
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+p,
+blockquote,
+pre,
+code,
+address,
+ul,
+ol,
+li,
+nav,
+section,
+article,
+header,
+footer,
+main,
+aside,
+dl,
+dt,
+dd,
+table,
+thead,
+tbody,
+tfoot,
+label,
+caption,
+th,
+td,
+form,
+fieldset,
+legend,
+hr,
+input,
+button,
+textarea,
+object,
+figure,
+figcaption {
   margin: 0;
   padding: 0;
-  font-family: "Pretendard" ," Noto Sans KR", sans-serif;
+  font-family: "Pretendard", " Noto Sans KR", sans-serif;
 }
 
-body, input, select, textarea, button, img, fieldset {
+body,
+input,
+select,
+textarea,
+button,
+img,
+fieldset {
   border: none;
 }
 
-ul, ol, li {
+ul,
+ol,
+li {
   list-style: none;
 }
 
@@ -21,16 +72,28 @@ table {
   table-layout: fixed;
 }
 
-address, cite, code, em, i {
+address,
+cite,
+code,
+em,
+i {
   font-style: normal;
   font-weight: normal;
 }
 
-label, img, input, select, textarea, button, a {
+label,
+img,
+input,
+select,
+textarea,
+button,
+a {
   vertical-align: middle;
 }
 
-u, ins, a {
+u,
+ins,
+a {
   text-decoration: none;
 }
 
@@ -40,7 +103,7 @@ button {
 }
 
 a {
-  color:inherit;
+  color: inherit;
 }
 
 /* Normalize */
@@ -107,7 +170,8 @@ input[type=date]::before {
 input[type=date]:valid::before {
   display: none;
 }
-textarea{
+
+textarea {
   resize: none;
 }
 
@@ -116,20 +180,23 @@ html {
   /* letter-spacing: -0.05rem; */
   /* line-height: 1; */
 }
-@media(width <768px){
-  html{
-    font-size:31.25%;
-    -webkit-text-size-adjust:none; 
+
+@media(width <768px) {
+  html {
+    font-size: 31.25%;
+    -webkit-text-size-adjust: none;
   }
 }
-@supports (-webkit-touch-callout: none)  {
-}
+
+@supports (-webkit-touch-callout: none) {}
 
 body {
-  font-size: 1rem;
+  font-size: 1.6rem;
 }
 
-caption, legend, .hide {
+caption,
+legend,
+.hide {
   overflow: hidden;
   display: block;
   position: absolute;
@@ -140,19 +207,24 @@ caption, legend, .hide {
 }
 
 @media print {
+
   .header,
   .footer,
   .visual {
     display: none;
   }
+
   .page-break {
     page-break-before: always;
   }
 }
+
 @page {}
+
 .print {
   display: block;
 }
+
 @media screen {
   .print {
     display: none;
