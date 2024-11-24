@@ -583,9 +583,11 @@
     <script>
       gsap.registerPlugin(ScrollTrigger);
 
+      let visualAni;
+
       ScrollTrigger.matchMedia({
-        "(max-width: 1024px)": function () {
-          const visualAni = gsap.timeline({
+        "(min-width: 1025px)": function () {
+          visualAni = gsap.timeline({
             scrollTrigger: {
               trigger: ".home_area .home_title",
               start: "top 20%",
@@ -598,8 +600,13 @@
             .addLabel("a")
             .to(".home_area .txt_box1", { xPercent: 40 }, "a")
             .to(".home_area .txt_box2", { xPercent: -40 }, "a");
+        },
 
-          ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+        "(max-width: 1024px)": function () {
+          if (visualAni) {
+            visualAni.scrollTrigger.kill();
+            visualAni.kill();
+          }
         },
       });
 
@@ -636,6 +643,7 @@
         },
       });
 
+      // AOS 초기화
       AOS.init();
     </script>
   </body>
