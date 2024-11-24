@@ -124,6 +124,7 @@ body {
   font-size: 2rem;
   font-weight: 600;
   line-height: 140%;
+  white-space: nowrap;
 }
 
 .career_area .inner .goal_text span {
